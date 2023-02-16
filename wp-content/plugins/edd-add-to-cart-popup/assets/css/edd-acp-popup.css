@@ -1,0 +1,91 @@
+div.edd-acp-popup {
+    position: fixed;
+    display: none;
+    padding: 25px;
+    border: 1px solid #444;
+    border-radius: 1px;
+    z-index: 9999999 !important;
+    box-sizing: border-box;
+}
+
+div.edd-acp-popup div.edd-acp-popup-singular p:first-of-type,
+div.edd-acp-popup div.edd-acp-popup-plural p:first-of-type {
+    margin-top: 0;
+}
+
+div.edd-acp-popup div.edd-acp-popup-singular p,
+div.edd-acp-popup div.edd-acp-popup-plural p {
+    margin-bottom: 15px;
+}
+
+div.edd-acp-popup div.edd-acp-button-container a {
+    text-decoration: none;
+}
+
+/* Button Directions */
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-horizontal a,
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-horizontal button {
+    display: inline-block;
+}
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-horizontal > * {
+    margin-left: 0;
+    margin-right: 0;
+}
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-horizontal > *:first-child {
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-vertical a,
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-vertical button {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div.edd-acp-popup div.edd-acp-button-container.edd-acp-buttons-vertical > *:first-child {
+    margin-bottom: 8px;
+}
+
+div.edd-acp-popup button.button {
+    -webkit-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    height: auto;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+div.edd-acp-popup a.edd-acp-goto-checkout {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+div.edd-acp-popup .aligncenter {
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+/** Gallery Images - WordPress space character between images */
+div.edd-acp-popup .gallery {
+    font-size: 0%;
+}
+
+@media screen and (max-width: 700px) {
+    div.edd-acp-popup div.edd-acp-button-container a,
+    div.edd-acp-popup div.edd-acp-button-container button {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    div.edd-acp-popup div.edd-acp-button-container button:first-of-type {
+        margin-bottom: 8px;
+    }
+}

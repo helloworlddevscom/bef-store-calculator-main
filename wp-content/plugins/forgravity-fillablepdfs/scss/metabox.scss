@@ -1,0 +1,168 @@
+#poststuff #forgravity-fillablepdfs .inside {
+
+	padding: 0 0 1.125rem;
+
+}
+
+.fillablepdfs-metabox__empty {
+
+	font-size: .875rem;
+	font-weight: 600;
+	text-align: center;
+
+	.button {
+
+		margin-top: 1.25rem;
+
+	}
+
+	#normal-sortables & {
+
+		padding: 4.125rem 0;
+
+	}
+
+	#side-sortables & {
+
+		padding: 2.5rem 1rem;
+
+	}
+
+}
+
+.fillablepdfs-metabox__table {
+
+	border-collapse: collapse;
+
+	tr {
+
+		border-bottom: 1px solid #EBECED;
+
+		&:nth-child( odd ) {
+
+			background: #F6F8FC;
+
+		}
+
+		td {
+
+			padding: .9375rem 1.5rem;
+
+			&:last-child {
+
+				text-align: right;
+
+			}
+
+		}
+
+	}
+
+	.fillablepdfs-metabox__file-name {
+
+		font-size: .875rem;
+		font-weight: 600;
+		position: relative;
+
+		&:before {
+
+			background: url( 'data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMiAxNiIgdmlld0JveD0iMCAwIDEyIDE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im03IDBjLjMgMCAuNS4xLjcuM2w0IDRjLjIuMi4zLjQuMy43djhjMCAxLjctMS4zIDMtMyAzaC02Yy0xLjcgMC0zLTEuMy0zLTN2LTEwYzAtMS43IDEuMy0zIDMtM3ptLTEgMmgtM2MtLjYgMC0xIC40LTEgMXYxMGMwIC42LjQgMSAxIDFoNmMuNiAwIDEtLjQgMS0xdi03aC0zYy0uNSAwLS45LS40LTEtLjl2LS4xeiIgZmlsbD0iIzExMSIvPjwvc3ZnPg==' );
+			background-size: contain;
+			content: '';
+			display: inline-block;
+			height: 1rem;
+			margin-right: .625rem;
+			vertical-align: middle;
+			width: .75rem;
+
+		}
+
+	}
+
+	.fillablepdfs-metabox__button {
+
+		background: #FFF;
+		border: 1px solid #9595A9;
+		border-radius: .25rem;
+		color: #2A2A4D;
+		display: inline-block;
+		font-size: .8125rem;
+		font-weight: 600;
+		line-height: 1.875rem;
+		margin-left: .625rem;
+		padding: 0 .75rem;
+		text-decoration: none;
+
+	}
+
+	#side-sortables & {
+
+		display: block;
+
+		tbody {
+
+			display: block;
+			width: 100%;
+
+		}
+
+		tr {
+
+			display: table;
+			width: 100%;
+
+			td {
+
+				box-sizing: border-box;
+				display: block;
+
+				&:first-child {
+
+					padding-bottom: 0;
+
+				}
+
+				&:last-child {
+
+					text-align: left;
+
+				}
+
+				.fillablepdfs-metabox__button:first-of-type {
+
+					margin-left: 0;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.fillablepdfs-metabox__delete {
+
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	height: 2rem;
+	margin-left: .625rem;
+	padding: 0 .5rem;
+	vertical-align: top;
+
+	img {
+
+		pointer-events: none;
+
+	}
+
+}
+
+.fillablepdfs-metabox__regenerate {
+
+	margin-left: 1.5rem !important;
+	margin-top: 2px !important;
+
+}

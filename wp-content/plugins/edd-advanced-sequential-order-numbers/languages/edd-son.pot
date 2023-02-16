@@ -1,0 +1,206 @@
+# Copyright (C) 2018 Easy Digital Downloads, LLC
+# This file is distributed under the same license as the Easy Digital Downloads - Advanced Sequential Order Numbers package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Digital Downloads - Advanced Sequential Order "
+"Numbers 1.0.8\n"
+"Report-Msgid-Bugs-To: https://easydigitaldownloads.com/\n"
+"POT-Creation-Date: 2018-01-13 12:48:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WP-Translations (http://wp-translations.org/)\n"
+"Language-Team: WP-Translations <wpt@wp-translations.org>\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n1.0.1\n"
+
+#: edd-son.php:114
+msgid "Temporary order number:"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:16
+msgid "Advanced Sequential Order Numbers"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:45
+msgid "Enable"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:46
+msgid "Enable Advanced Sequential Order Numbers"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:52
+msgid "Free Orders number series"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:53
+msgid "Enable the number series for free orders."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:61
+msgid "Number Series Prefixes"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:62
+msgid "Define prefixes for all number series."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:67
+msgid "Temp. Prefix"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:68
+msgid "Enter the prefix used for temporary order numbers (like pending orders)"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:74
+msgid "Free Prefix"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:75
+msgid "Enter the prefix used for free orders"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:81
+msgid "Completed Prefix"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:82
+msgid "Enter the prefix used for completed orders, which are not free."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:91
+msgid "Number Series Postfixes"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:92
+msgid "Define postfixes for all number series."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:97
+msgid "Temp. Postfix"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:98
+msgid "Enter the postfix used for temporary order numbers (like pending orders)"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:104
+msgid "Free Postfix"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:105
+msgid "Enter the postfix used for free orders"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:111
+msgid "Completed Postfix"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:112
+msgid "Enter the postfix used for completed orders, which are not free."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:121
+msgid "Order number padding"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:127
+msgid "Pad order numbers"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:128
+msgid "Add padding before, after or not at all, to order numbers."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:132
+msgid "No padding"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:133
+msgid "Pad left"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:134
+msgid "Pad right"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:139
+msgid "Pad with"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:140
+msgid "The character which will be used for padding order numbers."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:147
+msgid "Order number length"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:148
+msgid ""
+"How long should the order number be? Eg. a length of 5, and order number "
+"123, can produce XX123."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:157
+msgid "Next order numbers"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:163
+msgid "Temp #"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:164
+msgid "Next temporary order number."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:172
+msgid "Free #"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:173
+msgid "Next free order number."
+msgstr ""
+
+#: includes/class-edd-son-settings.php:181
+msgid "Completed #"
+msgstr ""
+
+#: includes/class-edd-son-settings.php:182
+msgid "Next completed order number."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Easy Digital Downloads - Advanced Sequential Order Numbers"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://easydigitaldownloads.com/downloads/advanced-sequential-order-"
+"numbers/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Advanced sequential order numbers for Easy Digital Downloads."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Easy Digital Downloads, LLC"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://easydigitaldownloads.com"
+msgstr ""

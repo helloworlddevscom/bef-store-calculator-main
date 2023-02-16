@@ -1,0 +1,103 @@
+@import "jquery.auto-complete.css";
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+
+div.gf_browser_chrome.gform_wrapper {
+    max-width: 75% !important;
+
+}.gf_page_steps {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
+
+.gf_page_steps .gf_step {
+    padding: 10px;
+}
+
+.gf_step span.gf_step_number {
+    display:none;
+}
+
+.gf_step_submenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.gf_step_submenu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.gf_submenu_item {
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 10px 10px 10px 0;
+}
+
+.gf_submenu_item a {
+    text-decoration: none;
+}
+
+.gf_submenu_item a:hover {
+    color: red;
+    border-top: 2px solid red;
+}
+
+.gf_submenu_item .gf_submenu_item_active {
+    border-top: 2px solid red;
+}
+
+.gform_wrapper .gf_page_steps {
+    height: 150px;
+}
+
+.report-menu__box-alignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*REVIEW PAGE TABLE STYLES*/
+tr td font table.gfield_list.review_table {
+    border-top: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    border-spacing: 0;
+    padding: 0;
+    margin: 2px 0 6px;
+    width: 100%
+}
+
+tr td font table.gfield_list.review_table thead tr th.review_table__header {
+    background-image: none;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 6px 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #F1F1F1;
+    color:#333;
+    text-align:left;
+}
+
+tr td font table.gfield_list.review_table tbody tr td.review_table__entry {
+    padding: 6px 10px;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    border-top: 1px solid #FFF;
+    font-family: sans-serif;
+    font-size:12px;
+    background-color: #F9F9F9;
+}

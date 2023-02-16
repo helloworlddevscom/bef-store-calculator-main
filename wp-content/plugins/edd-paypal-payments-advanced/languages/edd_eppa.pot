@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EDD PayPal Payments Advanced\n"
+"POT-Creation-Date: 2015-04-11 14:51-0500\n"
+"PO-Revision-Date: 2015-04-11 14:51-0500\n"
+"Last-Translator: Dave Kiss <dave@davekiss.com>\n"
+"Language-Team:  <dave@davekiss.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: edd-paypal-payments-advanced.php:117
+msgid "Payment"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:169
+#: edd-paypal-payments-advanced.php:232 paypal/PayPalAdvanced.php:398
+msgid "Could not retrieve the token."
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:289
+#: edd-paypal-payments-advanced.php:296
+#: edd-paypal-payments-advanced.php:301
+msgid "Silent Post Error"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:289
+#: edd-paypal-payments-advanced.php:296
+#, php-format
+msgid "Invalid Silent Post verification response. Silent Post data: %s"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:301
+#, php-format
+msgid ""
+"Invalid Silent Post verification response - PNREF does not match. Silent "
+"Post data: %s"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:368
+#: edd-paypal-payments-advanced.php:376
+msgid "PayPal Silent POST Error"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:368
+#, php-format
+msgid ""
+"Invalid payment amount in PayPal Silent POST response. PayPal Silent POST "
+"data: %s"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:376
+#, php-format
+msgid ""
+"Invalid purchase key in PayPal Silent POST response. PayPal Silent POST "
+"data: %s"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:465
+msgid "The user cancelled payment after going to PayPal"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:547
+msgid "Charge refunded in PayPal"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:600
+msgid "PayPal Payments Advanced"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:601
+msgid "PayPal"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:617
+msgid "PayPal Payments Advanced - Manager Settings"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:618
+msgid "Configure your PayPal Payments Advanced settings"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:623
+msgid "Live PayPal Manager Partner"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:624
+msgid "Enter your live PayPal Manager partner (default: \"PayPal\")"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:630
+msgid "Live PayPal Manager Vendor"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:631
+msgid "Enter your live PayPal Manager vendor"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:637
+msgid "Live PayPal Manager Username"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:638
+msgid "Enter your live PayPal Manager username"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:644
+msgid "Live PayPal Manager Password"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:645
+msgid "Enter your live PayPal Manager password"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:651
+msgid "Test PayPal Manager Username"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:652
+msgid "Enter your test PayPal Manager username"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:658
+msgid "Test PayPal Manager Password"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:659
+msgid "Enter your test PayPal manager password"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:665
+msgid "PayPal Template"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:666
+msgid "Select the template to use for your checkout process"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:669
+msgid "Template A"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:670
+msgid "Template B"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:671
+msgid "Template C"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:676
+msgid "Require Billing Address"
+msgstr ""
+
+#: edd-paypal-payments-advanced.php:677
+msgid "Check this to display billing address fields during checkout."
+msgstr ""
+
+#: paypal/PayPalAdvanced.php:286
+msgid "Discount"
+msgstr ""
+
+#: paypal/PayPalAdvanced.php:372
+msgid "Something went wrong while refunding the Charge in PayPal."
+msgstr ""
+
+#: paypal/PayPalAdvanced.php:509
+msgid "You must enter your PayPal Manager details in settings"
+msgstr ""

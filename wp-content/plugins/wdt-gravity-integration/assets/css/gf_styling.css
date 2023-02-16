@@ -1,0 +1,9 @@
+/*fix for Gravity datepicker in modal*/
+body div#ui-datepicker-div.ui-datepicker {
+    z-index: 100003 !important;
+}
+
+/*fix for wpDatatables datepicker in modal*/
+.wdt-datetimepicker-modal .datepicker {
+    width: auto !important;
+}

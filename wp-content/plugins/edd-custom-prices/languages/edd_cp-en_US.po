@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-02-23 09:23-0600\n"
+"PO-Revision-Date: 2018-02-23 09:23-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;_n\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: edd-custom-prices.php\n"
+
+#: edd-custom-prices.php:104
+msgid ""
+"<strong>Error:</strong> Easy Digital Downloads must be activated to use the "
+"Custom Prices extension."
+msgstr ""
+
+#: edd-custom-prices.php:116
+msgid "Purchase"
+msgstr ""
+
+#: edd-custom-prices.php:119
+msgid "Please enter a custom price higher than the minimum amount"
+msgstr ""
+
+#: edd-custom-prices.php:165
+msgid "Custom Pricing:"
+msgstr ""
+
+#: edd-custom-prices.php:171
+msgid "Enable custom pricing"
+msgstr ""
+
+#: edd-custom-prices.php:179
+msgid "Default: "
+msgstr ""
+
+#: edd-custom-prices.php:185
+msgid "Leave empty for no default price"
+msgstr ""
+
+#: edd-custom-prices.php:192
+msgid "Min: "
+msgstr ""
+
+#: edd-custom-prices.php:198
+msgid "Enter 0 for no min price"
+msgstr ""
+
+#: edd-custom-prices.php:204
+msgid "Button text: "
+msgstr ""
+
+#: edd-custom-prices.php:206
+msgid "Edit the default button text, displays the price by default"
+msgstr ""
+
+#: edd-custom-prices.php:209
+msgid "Bonus item"
+msgstr ""
+
+#: edd-custom-prices.php:210
+msgid ""
+"A bonus item allow you to give away an item for free when the custom price "
+"meets set conditions"
+msgstr ""
+
+#: edd-custom-prices.php:214
+msgid "Condition"
+msgstr ""
+
+#: edd-custom-prices.php:215
+msgid "Price"
+msgstr ""
+
+#: edd-custom-prices.php:216
+msgid "Bonus Item"
+msgstr ""
+
+#: edd-custom-prices.php:234
+msgid "None"
+msgstr ""
+
+#: edd-custom-prices.php:296 edd-custom-prices.php:335
+msgid "Name your price"
+msgstr ""
+
+#: edd-custom-prices.php:466 edd-custom-prices.php:483
+msgid " *bonus item*"
+msgstr ""
+
+#: edd-custom-prices.php:469
+msgid "custom price"
+msgstr ""
+
+#: edd-custom-prices.php:471
+msgid " - custom price"
+msgstr ""
+
+#: edd-custom-prices.php:487 edd-custom-prices.php:489
+msgid " (custom price)"
+msgstr ""
+
+#: edd-custom-prices.php:517 edd-custom-prices.php:524
+msgid "Custom price"
+msgstr ""
+
+#: edd-custom-prices.php:519
+msgid "*Bonus item*"
+msgstr ""

@@ -1,0 +1,17 @@
+= 1.1.2 (2017-Mayr-25) =
+* Fixed a bug where the AJAX popup would still be shown on EDD versions 2.7 or later.
+
+= 1.1.1 (2016-November-2) =
+* Fixed a bug where the popup would not be positioned in the center of the screen.
+* Fixed a bug where the popup would re-position itself incorrectly upon scrolling the page.
+
+= 1.1.0 (2016-September-22) =
+* Added more popup styling options
+* Added option to reset settings
+* Added shortcode support in popup text.
+
+= 1.0.1 (2016-July-29) =
+* Changed plugin copyright and ownership to RebelCode Ltd.
+
+= 1.0.0 (2016-April-05) =
+* Initial Release

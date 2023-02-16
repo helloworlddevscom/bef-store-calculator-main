@@ -1,0 +1,16 @@
+div.edd-acp-colorpicker {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input.small-text {
+    width: 80px;
+    vertical-align: middle;
+}
+
+#wp-admin-bar-edd-acp-preview-admin-bar a.ab-item:before {
+    content: '\f472';
+    top: 2px;
+}

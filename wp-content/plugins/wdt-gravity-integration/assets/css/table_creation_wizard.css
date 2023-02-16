@@ -1,0 +1,14 @@
+.wdt-gf-date-range-block input {
+    margin-top: -4px;
+}
+
+#wdt-gf-form .postbox {
+    min-width: initial !important;
+    border: 0 !important;
+    background: #fff;
+}
+
+#wdt-gf-form .postbox .inside {
+    padding: 0 !important;
+    margin: 0 !important;
+}

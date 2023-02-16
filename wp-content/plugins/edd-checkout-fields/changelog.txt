@@ -1,0 +1,197 @@
+= 2.1.8, November 24, 2020 =
+
+* Fix: Repeatable field values not displaying if the user only enters one value.
+* Fix: PHP warnings on PHP versions 7.2 and higher.
+* Fix: Label not correctly associated with email field.
+* Fix: Compatibility with EDD 3.0.
+
+= 2.1.7, November 15, 2019 =
+
+* Fix: Google reCaptcha wasn't always loading when it should due to a race condition.
+
+= 2.1.6, November 6, 2018 =
+
+* Fix: Media library files inaccessible inside of some page builders when Checkout Fields Manager is activated
+
+= 2.1.5, May 24, 2018 =
+
+* GDPR: Add checkout fields to the Personal Data Exporter.
+* GDPR: Allow anonymization and deletion of checkout fields with the Personal Data Eraser.
+* Note: All GDPR features require Easy Digital Downloads 2.9.2 or later.
+
+= 2.1.4, February 28, 2018 =
+
+* Fix: Purchase confirmation not showing user-saved fields
+* Fix: Checkbox and radio fields incorrectly validated when set as required
+
+= 2.1.3, January 18, 2018 =
+
+* Fix: Added upgrade routine to fix old First and Last name fields
+
+= 2.1.2, January 12, 2018 =
+
+* Fix: Field name for First and Last name is incorrect causing the field values to be stored improperly on checkout.
+
+= 2.1.1, September 21, 2017 =
+
+* Fix: Only run reCAPTCHA JS if the checkout has a reCAPTCHA field
+
+= 2.1, September 5, 2017 =
+
+* New: Added support for showing customer-submitted data on the purchase confirmation screen
+* Fix: Custom fields stored in user meta do not pre-populate fields on checkout
+
+= 2.0.13, August 21, 2017 =
+* Fix: Add New CFM form button was showing while editing the Checkout Form in admin.
+* Fix: reCAPTCHA not always showing for users.
+* Fix: Required fields were missing the HTML5 'required' attribute.
+* Fix: Auto-generated meta keys could contain non-valid characters when based off the provided label.
+
+= 2.0.12, March 10, 2017 =
+* Fix: Repeatable field doesn't display info on payment history.
+* Fix: Repeat fields can throw PHP errors upon checkout submission.
+* Fix: Repeatable field help text doesn't show to users.
+* Fix: Last name shown in first name field on checkout.
+
+= 2.0.11, March 10, 2017 =
+* Fix: Checkbox and Radio fields unable to be set as selected by default
+* Fix: Incorrect field ID used for Email field
+
+= 2.0.10, September 21, 2016 =
+* Fix: Incorrect text domain in personal info string
+* New: Add support for using custom checkout field meta inside of EDD PDF Stamper
+* New: Allow checkout field file uploader to work with EDD Amazon S3
+
+= 2.0.9, July 28, 2016 =
+* Fix: Quantity fields do not work properly when CFM is activated
+
+= 2.0.8, June 1, 2016 =
+* Fix: Help text not shown on Checkbox fields
+* Fix: Help text not shown on File Upload fields
+
+= 2.0.7, May 9, 2016 =
+* Fix: Fields saved to user meta failed to save when registering new accounts during checkout.
+* Fix: reCaptcha field does not load
+
+= 2.0.6, April 26, 2016 =
+* Fix: Last name field cannot be removed from checkout
+
+= 2.0.5, April 22, 2016 =
+* Fix: Allow translation files to load correctly based on locale
+
+= 2.0.4, April 21, 2016 =
+* Fix: Some text strings used the wrong text domain
+
+= 2.0.3, March 23, 2016 =
+* Fixed: The grabbing of meta (errors were showing upon "Checkout Fields Manager datepicker field schema" update).
+
+= 2.0.2, March 15, 2016 =
+* Fixed: upgrade issue from 1.x to 2.0 branch
+* Fixes: PHP7 compatibility
+
+= 2.0.1, March 1, 2016 =
+* Fixed: Issue with admin notification email contents
+
+= 2.0.0, March 1, 2016 =
+* New: Introduced CFM Field API that all CFM fields now run on
+* New: Introduced CFM Form API that all CFM forms now run on
+* New: Introduced _cfm_deprecated_function()
+* New: Introduced Honeypot field
+* New: Introduced ReCAPTCHA 2.0 field
+* New: Introduced Terms and Conditions field
+* New: Introduced Country dropdown field
+* New: Introduced Email field
+* New: Introduced Hidden field
+* New: Introduced Select field
+* New: Massive overhaul of the date field
+* New: Massive overhaul of the file upload field
+* New: The ability to save date to either the payment (for use on single order) or the customer (for use on many orders)
+* New: Ability for customer to edit customer meta saved data from the EDD profile shortcode
+* New: Ability for admin to edit customer meta saved data from the EDD Customers view
+* New: Validation routines now use edd's inbuild validation, and is done in filterable PHP, not Javascript
+* New: The ability to import, export and reset the checkout form
+* New: The ability to make admin-side only fields (for things like storing extra information about orders)
+* New: Introduce cfm_is_key() and many more array helper functions
+* New: Formbuilder now divides fields into custom and extension field metaboxes
+* New: Raised minimum EDD requirement to 2.4
+* New: Raised minimum WP requirement to 4.3
+* New: CSS class can now be added to all fields in CFM
+* New: You can now toggle which fields are added by default to the CSV exports
+* New: You can now use any CFM field in the EDD emails.
+* New: Completely new upgrade and install routine with a new schema class
+* New: Intelligent schema corrector that finds issues with stored fields and automatically fixes them
+* New: Introduced a multitude of EDD session variables for detecting a CFM form being submitted, validated and more.
+* New: Hundreds of added filters and actions for you to enjoy
+* New: CFM now adds an EDD settings tab in the extension settings (only used for storing reCAPTCHA keys for now)
+* New: Introduced get_form_id_by_name function
+* New: Introduced get_form_class_by_name function
+* New: Introduced get_form_by_name function
+* New: Introduced get_form_by_id function
+* New: Introduced get_form_name_by_class function
+* New: Added error if the checkout form isn't set
+* New: Added index.php in the language folder
+* New: Introduced a highly robust and filterable field sanitization and validation system
+* New: Introduced cfm_dash_to_lower function
+* New: Introduced cfm_is_frontend() function
+* New: Introduced cfm_is_admin function
+* New: Introduced cfm_is_api_request function
+* New: Completely rethought system for triggering the EDD file protection for uploaded files
+* New: Better file upload validation routines
+* New: Scripts and Styles are now minified triggered using an new, better system
+* New: Hundreds of PHPdocblocs added
+* New: All fields have brand new sanitization and validation routines designed from scratch
+* New: Massive improvements to the display of the formbuilder styling wise
+* New: Removed hundreds of lines of reduced JS and CSS previously loaded on the checkout page
+* New: All fields now follow EDD core's method of html structure
+* New: Reformatted changelog
+* New: (and unbelievably if you consider all that's above this), CFM is now 2,200 lines of code shorter than previous versions (less places for bugs to be).
+* Fixed: Checkout formbuilder now does not show in the network panel of an MS site
+* Fixed: All text fields now use the edd-input class for consistent styling
+* Fixed: Undefined index errors with some of the fields
+* Fixed: There is now no way to bypass a required checkbox field
+* Fixed: A console.log which was accidentily left in a JS file has been removed
+* Tweak: The "Do Action" field is now called "Action Hook"
+
+= 1.2.1, December 16, 2015 =
+* Fixed: a conflict with WordPress 4.4
+
+= 1.2: September 30, 2015 =
+* New: an option to make first name optional
+* Fixed: an issue with required fields not being passed to EDD checkout properly
+
+= 1.1.6: August 21, 2015 =
+* Fixed: bug with checkbox fields not being included in export or email tags
+
+= 1.1.5: August 4, 2015 =
+* New: Fixed problem that prevented other extensions from customizing the checkout screen
+
+= 1.1.4: May 3, 2015 =
+* New: Checkout fields manager now supports file uploads attachments on EDD core emails
+
+= 1.1.3: May 3, 2015 =
+* New: Checkout fields manager now supports commissions emails
+
+= 1.1.2: May 3, 2015 =
+* New: All field types can now be used in emails
+
+= 1.1.1: September 25, 2014 =
+* Fixed: a bug with upload fields not working on the View Order Details screen
+
+= 1.1.0: August 1, 2014 =
+* New: ability to export fields in emails
+* New: ability to export fields in CSV
+
+= 1.0.4: March 28, 2014 =
+* Fixed: a bug with not being able to properly save payment details with CFM active.
+
+= 1.0.3: March 12, 2014 =
+* Fixed: a bug with required checkboxes not being required.
+
+= 1.0.2: February 10, 2014 =
+* Fixed: a bug with not being able to submit the checkout form
+
+= 1.0.1: February 3, 2014 =
+* Fixed: a conflict with Stripe and Paymill payment gateways
+
+= 1.2.1: December 24, 2013 =
+* New: Initial release

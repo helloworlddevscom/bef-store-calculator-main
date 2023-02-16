@@ -1,0 +1,67 @@
+name: Staging Deploy to WP Engine
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Git fetch and unshallow
+        run: git fetch --prune --unshallow
+      - name: Push to WP Engine
+        run: |
+          # Where we'll store our two SSH keys.
+          SSH_PATH="$HOME/.ssh"
+
+          # WP Engine's Git host.
+          WPE_GIT_HOST="git.wpengine.com"
+
+          # WP Engine's server SSH host.
+          WPE_SSH_HOST="${{ secrets.WPE_ENVIRONMENT_STAGING }}.ssh.wpengine.net"
+
+          # WP Engine's environment.
+          WPE_ENVIRONMENT="production"
+
+          # Our site name within WP Engine.
+          WPE_SITE_NAME="${{ secrets.WPE_ENVIRONMENT_STAGING }}"
+
+          # The file SSH uses to verify validity of hosts.
+          KNOWN_HOSTS_PATH="$SSH_PATH/known_hosts"
+
+          # Path to private SSH key used to authenticate w/ WP Engine's Git host.
+          SSH_PRIVATE_GIT_KEY_PATH=$SSH_PATH/wpegitkey
+
+          # Path to private SSH key used to authenticate w/ WP Engine's server.
+          SSH_PRIVATE_ACCOUNT_KEY_PATH=$SSH_PATH/wpeaccountkey
+
+          # The directory within WP Engine's server where our site files live.
+          DEPLOYMENT_DIRECTORY="sites/${{ secrets.WPE_ENVIRONMENT_STAGING }}"
+
+          # Explicitly create the `known_hosts` file, since the next command
+          # will assume it exists & attempt to append do it.
+          mkdir $SSH_PATH && touch $KNOWN_HOSTS_PATH
+
+          # Add our hosts to the `known_hosts` file.
+          ssh-keyscan -t rsa "$WPE_GIT_HOST" >> "$KNOWN_HOSTS_PATH"
+          ssh-keyscan -t rsa "$WPE_SSH_HOST" >> "$KNOWN_HOSTS_PATH"
+
+          # Write our SSH keys to the appropriate files.
+          echo "${{ secrets.SSH_PRIVATE_GIT_KEY }}" > "$SSH_PRIVATE_GIT_KEY_PATH"
+          echo "${{ secrets.SSH_PRIVATE_ACCOUNT_KEY }}" > "$SSH_PRIVATE_ACCOUNT_KEY_PATH"
+
+          # Set file permissions.
+          chmod 700 "$SSH_PATH"
+          chmod 644 "$KNOWN_HOSTS_PATH"
+          chmod 600 "$SSH_PRIVATE_GIT_KEY_PATH"
+          chmod 600 "$SSH_PRIVATE_ACCOUNT_KEY_PATH"
+
+          # Push code to WP Engine's Git host, which will deploy it to the server.
+          git config core.sshCommand "ssh -i $SSH_PRIVATE_GIT_KEY_PATH -o UserKnownHostsFile=$KNOWN_HOSTS_PATH"
+          git remote add $WPE_ENVIRONMENT git@$WPE_GIT_HOST:$WPE_ENVIRONMENT/$WPE_SITE_NAME.git
+          git push $WPE_ENVIRONMENT HEAD:master --force

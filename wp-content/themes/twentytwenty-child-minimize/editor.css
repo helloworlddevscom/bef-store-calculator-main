@@ -1,0 +1,15 @@
+
+/* FONTS */
+.editor-styles-wrapper p, .editor-styles-wrapper ol, .editor-styles-wrapper ul, .editor-styles-wrapper dl, .editor-styles-wrapper dt {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.editor-styles-wrapper .wp-block h6 {
+	text-transform: none;
+}
+
+.editor-styles-wrapper .wp-block h1, .editor-styles-wrapper .wp-block h2, .editor-styles-wrapper .wp-block h3, .editor-styles-wrapper .wp-block h4, .editor-styles-wrapper .wp-block h5, .editor-styles-wrapper .wp-block h6 {
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 700;
+}
